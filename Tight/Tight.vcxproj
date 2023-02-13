@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Tight\Log.h" />
     <ClInclude Include="src\Tight.h" />
     <ClInclude Include="src\Tight\Application.h" />
     <ClInclude Include="src\Tight\Core.h" />
     <ClInclude Include="src\Tight\EntyrPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Tight\Log.cpp" />
     <ClCompile Include="src\Tight\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -63,8 +65,7 @@
       <PreprocessorDefinitions>TIGHT_PLATFORM_WINDOWS;TIGHT_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>Default</LanguageStandard>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Tight\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -79,8 +80,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>TIGHT_PLATFORM_WINDOWS;TIGHT_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Tight\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
