@@ -1,3 +1,4 @@
+#include "tpch.h"
 #include "Log.h"
 
 namespace Tight {
